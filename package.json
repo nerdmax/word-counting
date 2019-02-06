@@ -1,0 +1,148 @@
+{
+  "name": "word-counting",
+  "version": "0.0.0-development",
+  "description": "A very powerful words counter that supports plain text and html.",
+  "keywords": [
+    "count",
+    "html",
+    "occurrence",
+    "text",
+    "words"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerdmax/word-counting.git"
+  },
+  "license": "MIT",
+  "author": "Max <mrliucan@foxmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/word-counting.umd.js",
+  "module": "dist/word-counting.es5.js",
+  "typings": "dist/types/word-counting.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist docs",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "build:doc": "typedoc --out docs --target es6 --theme minimal --mode file src",
+    "check-ci": "yarn format:ci && yarn test:prod && yarn build && yarn build:doc",
+    "precommit": "lint-staged",
+    "commit": "git-cz",
+    "commitmsg": "commitlint -E GIT_PARAMS",
+    "contributors:add": "all-contributors add",
+    "contributors:check": "all-contributors check",
+    "contributors:generate": "all-contributors generate",
+    "contributors:init": "all-contributors init",
+    "deploy-docs": "gh-pages --repo https://$GH_TOKEN@github.com/nerdmax/word-counting.git -d docs",
+    "format": "yarn prettier --write",
+    "format:ci": "yarn prettier --list-different",
+    "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+    "prepublishOnly": "npm run test && npm run build",
+    "semantic-release": "semantic-release",
+    "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
+    "start": "rollup -c rollup.config.ts -w",
+    "test": "jest",
+    "test:prod": "yarn type-check && yarn run lint && yarn run test && codecov",
+    "test:watch": "jest --watch",
+    "travis-deploy-once": "travis-deploy-once",
+    "prettier": "prettier '**/*.{js,ts,tsx,css,json}'",
+    "type-check": "tsc --noEmit"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/*.{js,ts}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
+  },
+  "dependencies": {
+    "@sentry/browser": "^4.5.3",
+    "html2plaintext": "^2.1.2",
+    "word-regex": "^0.1.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.12.9",
+    "all-contributors-cli": "^5.4.1",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-jest": "^23.2.0",
+    "codecov": "^3.1.0",
+    "colors": "^1.3.2",
+    "commitizen": "^3.0.0",
+    "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "gh-pages": "^2.0.1",
+    "husky": "^1.0.1",
+    "jest": "^23.6.0",
+    "jest-config": "^23.6.0",
+    "lint-staged": "^8.0.0",
+    "lodash.camelcase": "^4.3.0",
+    "prettier": "^1.14.3",
+    "prompt": "^1.0.0",
+    "replace-in-file": "^3.4.2",
+    "rollup": "^1.0.0",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.19.0",
+    "semantic-release": "^15.13.3",
+    "travis-deploy-once": "^5.0.11",
+    "ts-jest": "^23.10.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "typedoc": "^0.14.0",
+    "typescript": "^3.0.3"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "{src,test}/**/*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
