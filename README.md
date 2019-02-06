@@ -33,6 +33,7 @@
 
 - Support node and browser environment.
 - Support html formated text. (Won't count tags)
+- Well typed
 
 ## Installation
 
