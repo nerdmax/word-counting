@@ -1,6 +1,6 @@
 module.exports = function(w) {
   return {
-    files: ['src/**/*.ts', 'test/fixtures/entry.js'],
+    files: ['src/**/*.ts'],
 
     tests: ['test/**/*.test.ts'],
 
