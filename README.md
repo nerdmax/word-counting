@@ -1,4 +1,4 @@
-# Change assets extension plugin for the HTML Webpack Plugin
+# Word counting
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
@@ -22,7 +22,7 @@
 
 [![nodei.co][npm-io]][npm-url]
 
-- [Change assets extension plugin for the HTML Webpack Plugin](#change-assets-extension-plugin-for-the-html-webpack-plugin)
+- [Word counting](#word-counting)
   - [Why this project](#why-this-project)
   - [Installation](#installation)
   - [Basic Usage](#basic-usage)
