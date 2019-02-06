@@ -28,6 +28,8 @@ const wordsCounter = (text: string, config?: Config): Result => {
   } catch (err) {
     /* istanbul ignore next */
     Sentry.captureException(err)
+    /* istanbul ignore next */
+    throw err
   }
   return result
 }
