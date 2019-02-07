@@ -28,7 +28,7 @@
     "check-ci": "yarn format:ci && yarn test:prod && yarn build && yarn build:doc",
     "precommit": "lint-staged",
     "commit": "git-cz",
-    "commitmsg": "commitlint -E GIT_PARAMS",
+    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS",
     "contributors:add": "all-contributors add",
     "contributors:check": "all-contributors check",
     "contributors:generate": "all-contributors generate",
