@@ -86,7 +86,6 @@
     }
   },
   "dependencies": {
-    "@sentry/browser": "^4.5.3",
     "html2plaintext": "^2.1.2",
     "word-regex": "^0.1.2"
   },
