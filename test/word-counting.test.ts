@@ -8,6 +8,13 @@ describe('word-counting', () => {
     })
   })
 
+  describe('with punctuation text', () => {
+    test('counts words', () => {
+      const mockedText = ','
+      expect(wordsCounter(mockedText).wordsCount).toEqual(0)
+    })
+  })
+
   describe('with plain text', () => {
     test('counts words', () => {
       const mockedText = 'These are some mocked words.'
