@@ -1,5 +1,5 @@
+const htmlToText = require('html-to-text')
 const regex = require('word-regex')
-const h2p = require('html2plaintext')
 
 /**
  * The config settings for the wordsCounter function
@@ -38,11 +38,11 @@ const wordsCounter = (text: string, config?: Config): Result => {
     wordsCount: 0
   }
 
-  const plainText = config && config.isHtml ? h2p(text) : text
+  const plainText = config && config.isHtml ? htmlToText.fromString(text) : text
 
   if (plainText.length > 0) {
     const match = plainText.match(regex())
-    result.wordsCount = match && match.length
+    result.wordsCount = match ? match.length : 0
   }
 
   return result
