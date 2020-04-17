@@ -92,7 +92,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
-    "@types/html-to-text": "^1.4.31",
+    "@types/html-to-text": "^5.1.0",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.7.2",
     "all-contributors-cli": "^6.0.0",
