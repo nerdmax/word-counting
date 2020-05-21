@@ -90,7 +90,7 @@
     "word-regex": "^0.1.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
+    "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.0.0",
     "@types/html-to-text": "^1.4.31",
     "@types/jest": "^24.0.0",
