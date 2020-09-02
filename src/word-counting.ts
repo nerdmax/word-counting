@@ -38,7 +38,10 @@ const wordsCounter = (text: string, config?: Config): Result => {
     wordsCount: 0
   }
 
-  const plainText = config && config.isHtml ? htmlToText.fromString(text) : text
+  const plainText =
+    config && config.isHtml
+      ? htmlToText.fromString(text, { ignoreHref: true, ignoreImage: true })
+      : text
 
   if (plainText.length > 0) {
     const match = plainText.match(regex())
