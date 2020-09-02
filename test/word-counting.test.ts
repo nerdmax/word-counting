@@ -23,10 +23,22 @@ describe('word-counting', () => {
   })
 
   describe('with html text', () => {
-    test('counts words', () => {
+    test('p tag', () => {
       const mockedText = '<p>These are some mocked words with html format</p>'
       expect(wordsCounter(mockedText).wordsCount).toEqual(10)
       expect(wordsCounter(mockedText, { isHtml: true }).wordsCount).toEqual(8)
+    })
+
+    test('image tag', () => {
+      const mockedText = '<img src="pic_trulli.jpg" alt="Italian Trulli">'
+      expect(wordsCounter(mockedText).wordsCount).toEqual(7)
+      expect(wordsCounter(mockedText, { isHtml: true }).wordsCount).toEqual(0)
+    })
+
+    test('link tag', () => {
+      const mockedText = '<a href="www.github.com">Github</a>'
+      expect(wordsCounter(mockedText).wordsCount).toEqual(7)
+      expect(wordsCounter(mockedText, { isHtml: true }).wordsCount).toEqual(1)
     })
   })
 })
