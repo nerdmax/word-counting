@@ -1,6 +1,5 @@
 # Word counting
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/nerdmax/word-counting.svg)](https://greenkeeper.io/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
@@ -10,7 +9,7 @@
 [![Downloads Stats][npm-downloads]][npm-url]
 [![Github stars][github-stars]][github-url]
 [![Github issues][github-issues]][github-issues-url]
-[![Build Status](https://travis-ci.org/nerdmax/word-counting.svg?branch=master)](https://travis-ci.org/nerdmax/word-counting)
+![Github Actions workflow](https://github.com/nerdmax/word-counting/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/nerdmax/word-counting/branch/master/graph/badge.svg)](https://codecov.io/gh/nerdmax/word-counting)
 [![Dev Dependencies](https://david-dm.org/nerdmax/word-counting.svg)](https://david-dm.org/nerdmax/word-counting?type=dev)
 
