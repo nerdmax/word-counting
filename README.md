@@ -3,7 +3,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/nerdmax/word-counting.svg)](https://greenkeeper.io/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 [![NPM Version][npm-image]][npm-url]
 [![License Stats][npm-license]][npm-url]
@@ -101,9 +101,17 @@ Feel free to make any improvements or changes. Any changes will be appreciated a
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/18550349?v=4" width="100px;"/><br /><sub><b>Max Liu</b></sub>](https://github.com/nerdmax)<br />[💻](https://github.com/nerdmax/word-counting/commits?author=nerdmax "Code") [📖](https://github.com/nerdmax/word-counting/commits?author=nerdmax "Documentation") [🚇](#infra-nerdmax "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/nerdmax/word-counting/commits?author=nerdmax "Tests") |
-| :---: |
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/nerdmax"><img src="https://avatars3.githubusercontent.com/u/18550349?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Max Liu</b></sub></a><br /><a href="https://github.com/nerdmax/word-counting/commits?author=nerdmax" title="Code">💻</a> <a href="https://github.com/nerdmax/word-counting/commits?author=nerdmax" title="Documentation">📖</a> <a href="#infra-nerdmax" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nerdmax/word-counting/commits?author=nerdmax" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://darkcod3r.com"><img src="https://avatars.githubusercontent.com/u/67574498?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pepe Sosa</b></sub></a><br /><a href="https://github.com/nerdmax/word-counting/issues?q=author%3ABlackRoadCode" title="Bug reports">🐛</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
