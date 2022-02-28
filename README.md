@@ -73,11 +73,15 @@ console.log(wordsCounter(mockedText, { isHtml: true }).wordsCount) // 8
 
 ## Contributing
 
+Feel free to make any improvements or changes. Any changes will be appreciated and I'll add you to the contributors list below. :)
+
 1. Fork it (<https://github.com/nerdmax/word-counting/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+2. Create your feature branch. (`git checkout -b feature/fooBar`)
+3. Make some changes.
+4. State your changes. (`git add .`)
+5. Commit your changes (`yarn commit`). NOTE: This repo is following the [conventional commits](https://www.conventionalcommits.org/), and `yarn commit` is the easiest way to construct the commit message.
+6. Push to the branch. (`git push origin feature/fooBar`)
+7. Create a new Pull Request.
 
 <!-- Markdown link & img dfn's -->
 
