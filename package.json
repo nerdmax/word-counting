@@ -87,7 +87,7 @@
     }
   },
   "dependencies": {
-    "html-to-text": "^5.1.1",
+    "html-to-text": "^8.1.0",
     "word-regex": "^0.1.2"
   },
   "devDependencies": {
