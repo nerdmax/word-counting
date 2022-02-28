@@ -40,5 +40,12 @@ describe('word-counting', () => {
       expect(wordsCounter(mockedText).wordsCount).toEqual(7)
       expect(wordsCounter(mockedText, { isHtml: true }).wordsCount).toEqual(1)
     })
+
+    test('nested tags', () => {
+      const mockedText =
+        '<div><div>These are some</div><div>mocked words with html format</div></div>'
+      expect(wordsCounter(mockedText).wordsCount).toEqual(14)
+      expect(wordsCounter(mockedText, { isHtml: true }).wordsCount).toEqual(8)
+    })
   })
 })
